@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* common styles */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+html {
+  font-size: 1.6em;
+}
+
+/* header */
+
+header {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #ffc800;
+}
+
+header #title {
+  text-align: center;
+  font-family: "Crimson Text";
+  font-size: 6em;
+  margin: 0 35px;
+}
+
+/* controls */
+
+#controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  height: 30vh;
+}
+
+.button {
+  font-size: "inter";
+  font-size: 1.6em;
+  padding: 4px 6px;
+  border: 2px solid #000;
+  border-radius: 5px;
+
+  background-color: #ffc800;
+}
+
+.small-buttons {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+
+  width: 320px;
+  max-width: 320px;
+}
+
+.big-button {
+  font-size: "inter";
+  font-size: 2em;
+  font-weight: 600;
+  padding: 6px 8px;
+
+  width: 320px;
+  max-width: 320px;
+  border: 3px solid #000;
+}
+
+/* sketch */
+
+#grid-container {
+  height: 400px;
+  width: 400px;
+  border: 2px solid #000;
+
+  display: grid;
+
+  margin-bottom: 50px;
+}
+
+.grid-cell {
+  background-color: #fff;
+  border: 0.5px dashed rgb(88, 88, 88);
+}
+
+.grid-cell-active {
+  background-color: #000;
+}
+
+@media screen and (max-width: 410px) {
+  #grid-container {
+    height: 340px;
+    width: 340px;
+  }
+}
